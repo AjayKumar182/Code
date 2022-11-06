@@ -1,0 +1,56 @@
+<html>  
+<head>  
+    <title>Login page</title>  
+  <!--insert style.css file inside index.html  -->  
+  <link rel = "stylesheet" type = "text/css" href = "style.css">   
+</head>  
+<body>  
+  <marquee> MINI-PASTE_BIN  LOGIN PAGE</marquee>
+    <div id = "frm">  
+        <h1>Login</h1>  
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+            <p>  
+                <label> UserName: </label>  
+                <input type = "text" id ="user" name  = "user"  placeholder="enter emai or phone number" />  
+            </p>  
+            <p>  
+                <label> Password: </label>  
+                <input type = "password" id ="pass" name  = "pass"   placeholder="enter password"/>  
+            </p>  
+               
+             <p>
+                        <input type =  "submit" id = "btn" value = "Login"  />
+              </p>
+       
+             
+        </form>  
+    </div>
+  <form>
+     <center> <a href="new_user_login.html">New user click here to register</a></center>
+    
+</form>
+   <!--validation for empty field  -->     
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+</body>     
+</html>  
