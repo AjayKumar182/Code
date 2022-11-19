@@ -16,7 +16,7 @@
           
         if($count == 1){  
             echo "<h1><center> Login successful </center></h1>";
-              header("Location: paste_here.html");
+              header("Location: paste_here.php");
                      exit;
         }  
         else{  
